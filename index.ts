@@ -1,5 +1,5 @@
 import {IUser, usersArray} from './users';
-import {IUsersInfo, userInfoArray, IOrganization} from  './userinfo';
+import {IUsersInfo, userInfoArray} from  './userinfo';
 
 interface IUserPosition {
     name: string,
@@ -16,8 +16,6 @@ function getUsersJobPositions(usersArray: IUser[]): IUserPosition[] {
         }))
 }
 
-const usersPosition: IUserPosition[] = getUsersJobPositions(usersArray);
+const usersPositions: IUserPosition[] = getUsersJobPositions(usersArray);
 
-console.log(usersPosition);
-
-const usersPositions = getUsersJobPositions(usersArray);
+console.log(usersPositions);
